@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+	<name>System - Xscrollbar</name>
+	<author>Parvez Akther</author>
+	<authorEmail>parvez@themexpert.com</authorEmail>
+	<authorUrl>http://www.themexpert.com</authorUrl>
+    <copyright>Copyright (C) 2011 - 2014S ThemeXpert. All rights reserved.</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>2014-04-28</creationDate>
+	<version>1.1</version>
+	<description>PLG_SYSTEM_XSCROLLBAR</description>
+
+    <files>
+		<filename plugin="xscrollbar">xscrollbar.php</filename>
+		<folder>assets</folder>
+		<folder>fields</folder>
+        <filename>index.html</filename>
+	</files>
+
+    <languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_xscrollbar.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_xscrollbar.sys.ini</language>
+	</languages>
+
+    <!-- Install script -->
+    <scriptfile>install.php</scriptfile>
+
+	<config>
+		<fields name="params" addfieldpath="plugins/system/xscrollbar/fields">
+
+            <fieldset name="basic">
+
+                <field name="bar_color" type="colorpicker" default="2c3e50" label="XSCROLLBAR_BAR_COLOR_LABEL" description="XSCROLLBAR_BAR_COLOR_DESC" />
+
+                <field name="bar_width" type="text" default="8px" label="XSCROLLBAR_CURSOR_WIDTH_LABEL" description="XSCROLLBAR_BAR_WIDTH_DESC" />
+
+                <field name="bar_radius" type="text" default="0px" label="XSCROLLBAR_CURSOR_RADIUS_LABEL" description="XSCROLLBAR_BAR_RADIUS_DESC" />
+
+                <field name="bar_hide" type="list" default="false" label="XSCROLLBAR_HIDE_LABEL" description="XSCROLLBAR_HIDE_DESC">
+                    <option value="cursor">JYES</option>
+                    <option value="false">JNO</option>
+                </field>
+
+                <field name="jquery" type="list" default="0" label="XSCROLLBAR_JQUERY_LABEL" description="XSCROLLBAR_JQUERY_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="disable_acymailing" type="radio" default="0" label="XSCROLLBAR_DISABLE_ACYMAILING_LABEL" description="XSCROLLBAR_DISABLE_ACYMAILING_DESC"
+                	class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+
+
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
