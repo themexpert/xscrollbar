@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+<extension version="3.1" type="plugin" group="system" method="upgrade">
 	<name>System - Xscrollbar</name>
 	<author>Parvez Akther</author>
 	<authorEmail>parvez@themexpert.com</authorEmail>
@@ -7,7 +7,7 @@
     <copyright>Copyright (C) 2011 - 2014S ThemeXpert. All rights reserved.</copyright>
 	<license>GNU General Public License version 3, or later</license>
 	<creationDate>2014-04-28</creationDate>
-	<version>1.1</version>
+	<version>1.2.0</version>
 	<description>PLG_SYSTEM_XSCROLLBAR</description>
 
     <files>
@@ -58,4 +58,9 @@
 
 		</fields>
 	</config>
+    <updateservers>
+         <!-- Note: No spaces or linebreaks allowed between the server tags -->
+        <server type="extension" priority="1" name="System - Xpert Scrollbar"><![CDATA[https://raw.githubusercontent.com/themexpert/xscrollbar/master/manifest.xml]]></server>
+    </updateservers>
+    
 </extension>
